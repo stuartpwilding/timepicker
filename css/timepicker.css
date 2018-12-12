@@ -1,0 +1,49 @@
+.timepicker .am_pm {
+    font-size: 1rem;
+    white-space: nowrap;
+    color: #939598;
+}
+
+.timepicker .am_pm span:last-child {
+    margin-left: 0.2rem;
+}
+
+.timepicker .am_pm span:hover,
+.timepicker .am_pm .selected {
+    color: #318bfa;
+}
+
+.timepicker_clock {
+    box-sizing: border-box;
+    height: 25rem;
+    width: 25rem;
+    padding: 2rem;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 109%;
+    box-shadow: 0 0 0.8rem 0.3rem #ddd;
+    cursor: pointer;
+}
+
+.timepicker_hand {
+    position: relative;
+    height: 21rem;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: auto 42%;
+    background-position: 50% 20%;
+    cursor: move;
+}
+
+.timepicker_hand::after {
+    content: '';
+    height: 0.9rem;
+    width: 0.9rem;
+    border-radius: 50%;
+    background: #318BFA;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
